@@ -34,3 +34,6 @@ Notes:
 			Handle<int> handle
 
 			where int is the return type of the functions called from the handle object
+	
+	Note: When using the interger exception handling functions make sure the input variable is
+	      a double and the class being passed to is a double so it can take in decimals to check
