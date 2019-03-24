@@ -24,6 +24,7 @@ Function list:
 	Function warning: *Inputs with a number then a charactar(s) will truncate the charactar(s)*
 
 Notes:
+
 	Note: To use the functions within the header file an object must be made from the 
 	      the Handle class
 
