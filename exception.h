@@ -66,7 +66,7 @@ public:
 		return userInput;
 	}
 
-	int promptAndLogInputInRangeAsInterger(const char* prompt, double userInput, double lowestValue, double highestValue) {
+	T promptAndLogInputInRangeAsInterger(const char* prompt, T userInput, double lowestValue, double highestValue) {
 		userInput = promptAndInput(prompt, userInput);
 		userInput = LogInputInRangeAsInterger(prompt, userInput, lowestValue, highestValue);
 
@@ -157,7 +157,7 @@ private:
 
 	bool checkIfDecimal(T userInput) {
 
-		if (userInput - static_cast<int>(userInput) == 0)
+		if (userInput - trunc(userInput) != 0)
 			return true;
 
 		return false;
